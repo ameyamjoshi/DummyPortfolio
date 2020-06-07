@@ -1,0 +1,26 @@
+/* body{
+    background-color: violet;
+} */
+
+.typing123{
+    position: relative;
+    margin-left: 10px;
+
+}
+.typing123::after {
+    content: "";
+    position: absolute;
+    height: 5vh;
+    width: 1vh;
+    border-right:1px solid black ;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
